@@ -4,14 +4,44 @@
     <form id="totalizer-form">
       <div>
         <label for="quantity-input">Quantity: </label>
-        <input type="int" id="quantity-input" /><br>
-        <label for="price-input">Price: </label>
-        <input type="int" id="price-input" /><br>
-        <p id="show-quantity-price"></p>
-        <div>
-          <input type="submit" value="Confirm" />
-        </div>
+        <input type="int" id="quantity-input" />
       </div><br>
+      <div>
+        <label for="price-input">Price: </label>
+        <input type="int" id="price-input" />
+      </div><br>
+      <div>
+        <label for="product-input">Product: </label>
+        <input type="text" id="product-input" />
+      </div><br>
+      <div>
+        <select id="State">
+          <option value="UT">UT</option>
+          <option value="NV">NV</option>
+          <option value="TX">TX</option>
+          <option value="AL">AL</option>
+          <option value="CA">CA</option>
+        </select>
+      </div><br>
+      <div>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+          </tr>
+          <tr>
+            <td id="product-output"></td>
+            <td id="price-output"></td>
+            <td id="quantity-output"></td>
+          </tr>
+        </table><br>
+        <p id="show-total"></p>
+        <p id="show-total-with-taxes"></p>
+      </div><br>
+      <div>
+        <input type="submit" value="Confirm" />
+      </div>
     </form>
     <script src="./src/index.js"></script>
   </body>
